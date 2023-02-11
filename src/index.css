@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'karla', 'sans-serif';
+}
+
+.leaflet-container{
+  border: 1px solid black;
+  border-radius: 7px;
+  margin-top: 40px;
+  height: 400px;
+  width: 900px;
+}
