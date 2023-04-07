@@ -1,40 +1,90 @@
+
 .items {
   color: rgb(28, 29, 30);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+}
+
+.details-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  margin: 10px;
+}
+
+.details-container>h1{
+  margin-top: 20px;
 }
 
 .details {
-  margin: 20px 100px;
-  width: 270px;
+  margin: 20px 0px 50px 0px;
+  width: 300px;
 }
 
 .details > * {
   margin: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+ padding-left: 5px;
 }
 
-.details > p:nth-child(2) {
+.details > p:nth-child(odd) {
   background-color: rgb(225,225,225);
 }
-.details > p:nth-child(4) {
-  background-color: rgb(225,225,225);
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
 }
-.details > p:nth-child(6) {
-  background-color: rgb(225,225,225);
+
+.input{
+  display: flex;
+  justify-content: space-between;
+border: 1px solid black;
+width: 220px;
+height: 40px;
+padding: 5px;
+border-radius: 7px;
 }
-.details > p:nth-child(8) {
-  background-color: rgb(225,225,225);
+
+form>div>input{
+  border: none;
+  outline: none;
+  font-size: 15px;
 }
-.details > p:nth-child(10) {
-  background-color: rgb(225,225,225);
+
+form>div>button{
+  background-color: transparent;
+  border: none;
 }
-.details > p:nth-child(12) {
-  background-color: rgb(225,225,225);
+
+.linear-loader{
+  width: 200px;
+  height: 1px;
+  position: relative;
 }
-.details > p:nth-child(14) {
-  background-color: rgb(225,225,225);
+
+.linear-loader>div{
+  background: radial-gradient(blue,rgb(210, 214, 227));
+  width: 60px;
+  height: 2px;
+  animation: loader 2s forwards infinite alternate ;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.details > p:nth-child(16) {
-  background-color: rgb(225, 225, 225);
+
+@keyframes loader {
+  0% {
+    left: -0%; 
+  }
+  100% {
+    left: 100%;
+  }
 }
